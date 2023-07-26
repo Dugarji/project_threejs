@@ -11,4 +11,4 @@ app.use(express.json({limit:"100mb"}))
 
 app.use('/api/v1/dalle',dalleRoutes);
 
-app.listen(8080,()=>console.log("Server started on port 8080"))
+app.listen(10000,()=>console.log("Server started on port 8080"))
