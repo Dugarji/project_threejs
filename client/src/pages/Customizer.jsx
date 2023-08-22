@@ -48,7 +48,7 @@ const Customizer = () => {
     try{
       setGeneratingImg(true);
 
-      const response= await axios.post("http://localhost:8080/api/v1/dalle",{
+      const response= await axios.post("https://project-threejs-zff8.onrender.com/api/v1/dalle",{
         body : JSON.stringify({prompt}),
       headers:
       {'content-type':'application/json'},})
@@ -99,7 +99,7 @@ const Customizer = () => {
   }
 
   const readFile=(type)=>{
-    reader(file).then((result)=>{
+   reader(file).then((result)=>{
       handleDecals(type,result);
       setActiveEditorTab("")
     })
